@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import HomePage from '../pages/homePage/HomePage' 
-import VoltagePage from '../pages/VoltagePage'
+import VoltagePage from '../pages/voltagePage/VoltagePage'
 import './App.scss'
 
 function App() {
