@@ -4,13 +4,20 @@ import { Link } from 'react-router-dom'
 // Компоненты
 import Header from '../../components/header/Header'
 // img
-
+import backImg from '../../resources/home/home-bg.jpg'
 // scss
 import './HomePage.scss'
 
 function HomePage() {
 	return (
 		<div className='home-wrapper'>
+			<div className='backImg__wrapper'>
+				<img className='backImg' src={backImg} alt='background' />
+				<Link className='circle-btn' to='/voltage'>
+					{' '}
+				</Link>
+				<div className='hide-link' id='start'></div>
+			</div>
 			<>
 				<Header />
 			</>
@@ -40,10 +47,6 @@ function HomePage() {
 						Играть
 					</a>
 				</div>
-
-				<div className='hide-link' id='start'></div>
-
-				<Link className='circle-btn' to='/voltage'> </Link>
 			</main>
 		</div>
 	)

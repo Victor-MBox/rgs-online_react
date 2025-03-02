@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import HomePage from '../pages/HomePage/HomePage'
+import HomePage from '../pages/homePage/HomePage' 
 import VoltagePage from '../pages/VoltagePage'
 import './App.scss'
 

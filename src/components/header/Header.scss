@@ -3,6 +3,8 @@
 .header {
 	padding-top: 32px;
     margin-bottom: 64px;
+	position: relative;
+	z-index: 2;
 	.container {
 		display: flex;
 		align-items: center;
