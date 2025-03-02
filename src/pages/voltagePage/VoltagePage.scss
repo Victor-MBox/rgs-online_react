@@ -1,1 +1,30 @@
 @use '../../style/variables' as vars;
+
+.screen {
+	position: relative;
+	width: 100%;
+
+	&__bg {
+/* 		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 0; */
+		width: 100%;
+	}
+	&__sidebar {
+		position: absolute;
+		right: 30px;
+		top: 53%;
+		transform: translateY(-50%);
+		z-index: 1;
+		width: 10%;
+	}
+
+	&__boy {
+		position: absolute;
+		bottom: 2px;
+		left: 0;
+		z-index: 2;
+        width: 36%;
+	}
+}

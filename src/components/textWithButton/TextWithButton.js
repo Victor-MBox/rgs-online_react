@@ -3,7 +3,11 @@ import React from 'react'
 // scss
 
 function TextWithButton() {
-    return <>TEST textWithButton</>
+    return (
+			<>
+				<h1>Тут изменяемый текст TextWithButton</h1>
+			</>
+		)
 }
 
 export default TextWithButton

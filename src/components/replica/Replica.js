@@ -5,7 +5,8 @@ import React from 'react'
 function Replica() {
 	return (
 		<>
-            TEST
+            <h1>Тут изменяемый текст</h1>
+			<button className='btn'>Далее</button>
         </>
 	)
 }
