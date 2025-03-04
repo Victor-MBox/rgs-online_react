@@ -2,12 +2,11 @@ import React from 'react'
 // img
 // scss
 
-function Replica() {
+function Replica({ text}) {
 	return (
 		<>
-            <h1>Тут изменяемый текст</h1>
-			<button className='btn'>Далее</button>
-        </>
+			<h1>{text}</h1>
+		</>
 	)
 }
 
