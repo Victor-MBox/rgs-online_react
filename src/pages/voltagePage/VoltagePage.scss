@@ -3,9 +3,15 @@
 .screen {
 	position: relative;
 	width: 100%;
+	/* overflow: hidden;
+	height: 100vh; */
 
 	&__bg {
 		width: 100%;
+		/* position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%); */
 	}
 	&__sidebar-wrapper {
 		position: absolute;
@@ -34,6 +40,18 @@
 		left: 0;
 		z-index: 2;
 		height: 80%;
+	}
+	&__woman {
+		position: absolute;
+		bottom: 2px;
+		right: 13%;
+		z-index: 2;
+		height: 74%;
+	}
+
+	&__woman_final {
+		right: auto;
+		left: 10%;
 	}
 
 	.invisible-button {
@@ -68,6 +86,30 @@
 			width: 32%;
 			height: 17%;
 		}
+	}
+	.coin-icon {
+		position: absolute;
+		z-index: 4;
+		width: 8.5%;
 
+		&__screen3 {
+			left: 56%;
+			top: 38%;
+		}
+
+		&__screen4 {
+			left: 76%;
+			top: 48%;
+		}
+
+		&__screen5 {
+			left: 67%;
+			top: 64%;
+		}
+
+		&__screen6 {
+			left: 57%;
+			top: 16%;
+		}
 	}
 }

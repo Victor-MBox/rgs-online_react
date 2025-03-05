@@ -2,10 +2,15 @@ import React from 'react'
 // scss
 import './Replica.scss'
 
-function Replica({ text }) {
+function Replica({ text, className, span }) {
 	return (
-		<div className='replica'>
-			<p>{text}</p>
+		<div
+			className={`
+			replica 
+			${className ? className : ''}
+		`}
+		>
+			<p>{text} <span> {span} </span> </p>
 			<svg
 				width='55'
 				height='32'

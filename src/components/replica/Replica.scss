@@ -11,15 +11,29 @@
 	position: absolute;
 	left: 26%;
 	top: 26%;
-    z-index: 3;
+	z-index: 3;
 
-	max-width: 400px;
+	max-width: 416px;
 
-    filter: drop-shadow(0 4px 30px rgba(0, 0, 0, 0.25));
+	filter: drop-shadow(0 4px 30px rgba(0, 0, 0, 0.25));
+
+	span {
+		font-weight: 600;
+	}
 
 	svg {
 		position: absolute;
 		left: 20px;
 		bottom: -26px;
+	}
+
+	&__woman {
+		left: auto;
+		right: 26%;
+		svg {
+			left: auto;
+			right: 26px;
+			transform: scale(-1, 1);
+		}
 	}
 }

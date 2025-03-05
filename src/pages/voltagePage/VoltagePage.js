@@ -3,8 +3,10 @@ import Replica from '../../components/replica/Replica'
 import СontrolPanel from '../../components/controlPanel/СontrolPanel'
 
 import { voltageScreens } from './voltageScreens'
+import coinIcon from '../../resources/voltage/coin_icon.svg'
 
 import './VoltagePage.scss'
+//img
 
 function VoltagePage() {
 	// Состояние для текущего индекса экрана
@@ -25,35 +27,65 @@ function VoltagePage() {
 		bg,
 		sidebar,
 		boy,
-		replicaText,
+		woman,
+		replicaBoyProps,
+		replicaWomanProps,
 		textСontrolPanel,
 		textButton,
 		invisibleButtonProps,
+		coinIconProps,
 	} = voltageScreens[currentScreen]
 
 	return (
 		<div className='screen'>
 			<img className='screen__bg' src={bg} alt='background' />
-			<div className='screen__sidebar-wrapper'>
-				<img src={sidebar} alt='sidebar' />
-			</div>
 
-			<img className='screen__boy' src={boy} alt='boy' />
-			<Replica text={replicaText} />
+			{sidebar && (
+				<div className='screen__sidebar-wrapper'>
+					<img src={sidebar} alt='sidebar' />
+				</div>
+			)}
 
-			<СontrolPanel
-				textBtn={textButton}
-				text={textСontrolPanel}
-				onNext={handleNextScreen}
-			/>
+			{boy && <img className='screen__boy' src={boy} alt='boy' />}
+
+			{replicaBoyProps.replicaText && (
+				<Replica
+					text={replicaBoyProps.replicaText}
+					className={replicaBoyProps.className}
+				/>
+			)}
+
+			{woman && <img className='screen__woman' src={woman} alt='woman' />}
+
+			{replicaWomanProps.replicaText && (
+				<Replica
+					text={replicaWomanProps.replicaText}
+					className={replicaWomanProps.className}
+					span={replicaWomanProps.replicaTextSpan}
+				/>
+			)}
+
+			{textСontrolPanel && (
+				<СontrolPanel
+					textBtn={textButton}
+					text={textСontrolPanel}
+					onNext={handleNextScreen}
+				/>
+			)}
 
 			{invisibleButtonProps.isVisible && (
 				<button
-					className={`
-					invisible-button 
-       					${invisibleButtonProps.className ? invisibleButtonProps.className : ''}`}
+					className={`invisible-button ${invisibleButtonProps.className || ''}`}
 					onClick={handleNextScreen}
 				></button>
+			)}
+
+			{coinIconProps.coinIcon && (
+				<img
+					className={`coin-icon ${coinIconProps.className || ''}`}
+					src={coinIcon}
+					alt='icon'
+				/>
 			)}
 		</div>
 	)
