@@ -24,7 +24,11 @@ export const voltageScreens = [
 			replicaText: 'Ну наконец-то выходной! Можно спокойно досмотреть сериал.',
 			className: '',
 		},
-		woman: false,
+		womanProps: {
+			woman: false,
+			className: '',
+		},
+
 		replicaWomanProps: {
 			replicaText: '',
 			replicaTextSpan: '',
@@ -51,7 +55,10 @@ export const voltageScreens = [
 				'Ой... Что это было? Что-то сверкнуло и вся техника разом выключилась.',
 			className: '',
 		},
-		woman: false,
+		womanProps: {
+			woman: false,
+			className: '',
+		},
 		replicaWomanProps: {
 			replicaText: '',
 			replicaTextSpan: '',
@@ -77,7 +84,10 @@ export const voltageScreens = [
 			replicaText: 'Так, по крайней мере, не будет искрить.',
 			className: '',
 		},
-		woman: false,
+		womanProps: {
+			woman: false,
+			className: '',
+		},
 		replicaWomanProps: {
 			replicaText: '',
 			replicaTextSpan: '',
@@ -103,7 +113,10 @@ export const voltageScreens = [
 			replicaText: 'Интересно, она успела сгореть?',
 			className: '',
 		},
-		woman: false,
+		womanProps: {
+			woman: false,
+			className: '',
+		},
 		replicaWomanProps: {
 			replicaText: '',
 			replicaTextSpan: '',
@@ -129,7 +142,10 @@ export const voltageScreens = [
 			replicaText: 'Эх, еще и новые колонки!',
 			className: '',
 		},
-		woman: false,
+		womanProps: {
+			woman: false,
+			className: '',
+		},
 		replicaWomanProps: {
 			replicaText: '',
 			replicaTextSpan: '',
@@ -155,7 +171,10 @@ export const voltageScreens = [
 			replicaText: 'Остался кондиционер — и всё',
 			className: '',
 		},
-		woman: false,
+		womanProps: {
+			woman: false,
+			className: '',
+		},
 		replicaWomanProps: {
 			replicaText: '',
 			replicaTextSpan: '',
@@ -181,7 +200,10 @@ export const voltageScreens = [
 			replicaText: 'Фу-у-ух. Это было страшно!',
 			className: '',
 		},
-		woman: false,
+		womanProps: {
+			woman: false,
+			className: '',
+		},
 		replicaWomanProps: {
 			replicaText: '',
 			replicaTextSpan: '',
@@ -208,7 +230,10 @@ export const voltageScreens = [
 				'Вот как всегда — на самом интересном месте! Как так вышло-то?',
 			className: '',
 		},
-		woman: womanImg1,
+		womanProps: {
+			woman: womanImg1,
+			className: '',
+		},
 		replicaWomanProps: {
 			replicaText: 'Случился перепад напряжения в электросети.',
 			replicaTextSpan: '',
@@ -236,7 +261,10 @@ export const voltageScreens = [
 				'Телек, кажется, совсем сгорел…  У меня оформлена страховка,  это получится компенсировать?',
 			className: '',
 		},
-		woman: womanImg2,
+		womanProps: {
+			woman: womanImg2,
+			className: '',
+		},
 		replicaWomanProps: {
 			replicaText:
 				'Конечно, по риску «Перепад напряжения» вам оплатят ремонт или полную стоимость пострадавших вещей — за каждую ',
@@ -264,7 +292,10 @@ export const voltageScreens = [
 			replicaText: '',
 			className: '',
 		},
-		woman: womanImg3,
+		womanProps: {
+			woman: womanImg3,
+			className: 'screen__woman_final',
+		},
 		replicaWomanProps: {
 			replicaText: '',
 			replicaTextSpan: '',

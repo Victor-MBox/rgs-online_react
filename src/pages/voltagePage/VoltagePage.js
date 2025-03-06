@@ -27,7 +27,7 @@ function VoltagePage() {
 		bg,
 		sidebar,
 		boy,
-		woman,
+		womanProps,
 		replicaBoyProps,
 		replicaWomanProps,
 		textСontrolPanel,
@@ -55,7 +55,13 @@ function VoltagePage() {
 				/>
 			)}
 
-			{woman && <img className='screen__woman' src={woman} alt='woman' />}
+			{womanProps.woman && (
+				<img
+					className={`screen__woman ${womanProps.className || ''}`}
+					src={womanProps.woman}
+					alt='woman'
+				/>
+			)}
 
 			{replicaWomanProps.replicaText && (
 				<Replica
@@ -87,6 +93,8 @@ function VoltagePage() {
 					alt='icon'
 				/>
 			)}
+
+			
 		</div>
 	)
 }
