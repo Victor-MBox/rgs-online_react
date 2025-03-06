@@ -1,23 +1,17 @@
 // img
-import boyImg1 from '../../resources/voltage/boy_1.png'
-import boyImg2 from '../../resources/voltage/boy_2.png'
+import boyImg1 from '../../resources/voltage/boy_1.webp'
+import boyImg2 from '../../resources/voltage/boy_2.webp'
 
-import womanImg1 from '../../resources/voltage/woman_1.png'
-import womanImg2 from '../../resources/voltage/woman_2.png'
-import womanImg3 from '../../resources/voltage/woman_3.png'
+import womanImg1 from '../../resources/voltage/woman_1.webp'
+import womanImg2 from '../../resources/voltage/woman_2.webp'
+import womanImg3 from '../../resources/voltage/woman_3.webp'
 
-import backImg1 from '../../resources/voltage/volt_bg_1.jpg'
-import backImg2 from '../../resources/voltage/volt_bg_2.jpg'
-import backImg3 from '../../resources/voltage/volt_bg_3.jpg'
-import backImg4 from '../../resources/voltage/volt_bg_4.jpg'
-import backImg5 from '../../resources/voltage/volt_bg_5.jpg'
-import backImg6 from '../../resources/voltage/volt_bg_6.jpg'
 import sidebar6 from '../../resources/sidebar/sidebar_6.svg'
 
 export const voltageScreens = [
 	{
 		id: 1,
-		bg: backImg1,
+		bgClassName: 'screen_screen1',
 		sidebar: sidebar6,
 		boy: boyImg1,
 		replicaBoyProps: {
@@ -47,7 +41,7 @@ export const voltageScreens = [
 	},
 	{
 		id: 2,
-		bg: backImg2,
+		bgClassName: 'screen_screen2',
 		sidebar: sidebar6,
 		boy: boyImg2,
 		replicaBoyProps: {
@@ -77,7 +71,7 @@ export const voltageScreens = [
 	},
 	{
 		id: 3,
-		bg: backImg2,
+		bgClassName: 'screen_screen2',
 		sidebar: sidebar6,
 		boy: boyImg1,
 		replicaBoyProps: {
@@ -106,7 +100,7 @@ export const voltageScreens = [
 	},
 	{
 		id: 4,
-		bg: backImg3,
+		bgClassName: 'screen_screen3',
 		sidebar: sidebar6,
 		boy: boyImg1,
 		replicaBoyProps: {
@@ -135,7 +129,7 @@ export const voltageScreens = [
 	},
 	{
 		id: 5,
-		bg: backImg4,
+		bgClassName: 'screen_screen4',
 		sidebar: sidebar6,
 		boy: boyImg1,
 		replicaBoyProps: {
@@ -164,7 +158,7 @@ export const voltageScreens = [
 	},
 	{
 		id: 6,
-		bg: backImg5,
+		bgClassName: 'screen_screen5',
 		sidebar: sidebar6,
 		boy: boyImg1,
 		replicaBoyProps: {
@@ -193,7 +187,7 @@ export const voltageScreens = [
 	},
 	{
 		id: 7,
-		bg: backImg6,
+		bgClassName: 'screen_screen6',
 		sidebar: sidebar6,
 		boy: boyImg1,
 		replicaBoyProps: {
@@ -222,7 +216,7 @@ export const voltageScreens = [
 	},
 	{
 		id: 8,
-		bg: backImg6,
+		bgClassName: 'screen_screen6',
 		sidebar: sidebar6,
 		boy: boyImg2,
 		replicaBoyProps: {
@@ -253,7 +247,7 @@ export const voltageScreens = [
 	},
 	{
 		id: 9,
-		bg: backImg6,
+		bgClassName: 'screen_screen6',
 		sidebar: sidebar6,
 		boy: boyImg2,
 		replicaBoyProps: {
@@ -285,7 +279,7 @@ export const voltageScreens = [
 	},
 	{
 		id: 10,
-		bg: backImg6,
+		bgClassName: 'screen_screen6',
 		sidebar: false,
 		boy: false,
 		replicaBoyProps: {

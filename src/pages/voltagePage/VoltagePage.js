@@ -24,7 +24,7 @@ function VoltagePage() {
 
 	// Достаем данные для текущего экрана
 	const {
-		bg,
+		bgClassName,
 		sidebar,
 		boy,
 		womanProps,
@@ -37,8 +37,8 @@ function VoltagePage() {
 	} = voltageScreens[currentScreen]
 
 	return (
-		<div className='screen'>
-			<img className='screen__bg' src={bg} alt='background' />
+		<div className={`screen ${bgClassName || ''}`}>
+			{/* <img className='screen__bg' src={bg} alt='background' /> */}
 
 			{sidebar && (
 				<div className='screen__sidebar-wrapper'>
@@ -93,8 +93,6 @@ function VoltagePage() {
 					alt='icon'
 				/>
 			)}
-
-			
 		</div>
 	)
 }
