@@ -1,16 +1,30 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Replica from '../../components/replica/Replica'
 import СontrolPanel from '../../components/controlPanel/СontrolPanel'
-
+import VoltageFinal from '../../components/voltageFinal/VoltageFinal'
 import { voltageScreens } from './voltageScreens'
 import coinIcon from '../../resources/voltage/coin_icon.svg'
-
 import './VoltagePage.scss'
-//img
 
 function VoltagePage() {
 	// Состояние для текущего индекса экрана
 	const [currentScreen, setCurrentScreen] = useState(0)
+
+	// Предзагрузка всех фоновых изображений при монтировании
+	useEffect(() => {
+		const images = [
+			require('../../resources/voltage/volt_bg_1.webp'),
+			require('../../resources/voltage/volt_bg_2.webp'),
+			require('../../resources/voltage/volt_bg_3.webp'),
+			require('../../resources/voltage/volt_bg_4.webp'),
+			require('../../resources/voltage/volt_bg_5.webp'),
+			require('../../resources/voltage/volt_bg_6.webp'),
+		]
+		images.forEach(src => {
+			const img = new Image()
+			img.src = src
+		})
+	}, []) // Пустой массив зависимостей — выполняется один раз при монтировании
 
 	// Хендлер переключения
 	const handleNextScreen = () => {
@@ -34,27 +48,23 @@ function VoltagePage() {
 		textButton,
 		invisibleButtonProps,
 		coinIconProps,
+		voltageFinal,
 	} = voltageScreens[currentScreen]
 
 	return (
 		<div className={`screen ${bgClassName || ''}`}>
-			{/* <img className='screen__bg' src={bg} alt='background' /> */}
-
 			{sidebar && (
 				<div className='screen__sidebar-wrapper'>
 					<img src={sidebar} alt='sidebar' />
 				</div>
 			)}
-
 			{boy && <img className='screen__boy' src={boy} alt='boy' />}
-
 			{replicaBoyProps.replicaText && (
 				<Replica
 					text={replicaBoyProps.replicaText}
 					className={replicaBoyProps.className}
 				/>
 			)}
-
 			{womanProps.woman && (
 				<img
 					className={`screen__woman ${womanProps.className || ''}`}
@@ -62,7 +72,6 @@ function VoltagePage() {
 					alt='woman'
 				/>
 			)}
-
 			{replicaWomanProps.replicaText && (
 				<Replica
 					text={replicaWomanProps.replicaText}
@@ -70,7 +79,6 @@ function VoltagePage() {
 					span={replicaWomanProps.replicaTextSpan}
 				/>
 			)}
-
 			{textСontrolPanel && (
 				<СontrolPanel
 					textBtn={textButton}
@@ -78,14 +86,12 @@ function VoltagePage() {
 					onNext={handleNextScreen}
 				/>
 			)}
-
 			{invisibleButtonProps.isVisible && (
 				<button
 					className={`invisible-button ${invisibleButtonProps.className || ''}`}
 					onClick={handleNextScreen}
 				></button>
 			)}
-
 			{coinIconProps.coinIcon && (
 				<img
 					className={`coin-icon ${coinIconProps.className || ''}`}
@@ -93,6 +99,8 @@ function VoltagePage() {
 					alt='icon'
 				/>
 			)}
+
+			{voltageFinal && <VoltageFinal />}
 		</div>
 	)
 }

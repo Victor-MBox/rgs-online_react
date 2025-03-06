@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 // img
 import icon1 from '../../resources/voltage/key_icon.svg'
 import icon2 from '../../resources/voltage/speaker_icon.svg'
+import attentionIcon from '../../resources/voltage/attention_icon.svg'
 
 import './VoltageFinal.scss'
 
@@ -38,10 +39,48 @@ function VoltageFinal() {
 
 			<p className='title'>Когда необходимо включить этот риск в полис?</p>
 
-			<ul>
-				<li></li>
-				<li></li>
+			<ul className='list-one'>
+				<li>Дом построен в 90-х или раньше.</li>
+				<li>У вас дорогостоящая техника.</li>
 			</ul>
+
+			<div className='accent'>
+				Добавить риск «Скачок напряжения» получится, только если один из рисков
+				— пожар, затопление или кража — уже включены в полис.
+			</div>
+
+			<div className='exception'>
+				<div className='column'>
+					<p className='title'>Важно</p>
+					<span>
+						За каждую вещь можно компенсировать до 10% от общего лимита
+						«Движимое имущество».
+					</span>
+					<span>
+						Например, вы поставили лимит — 500 000 ₽. Значит, телевизор за 50
+						000 ₽ можно компенсировать полностью.
+					</span>
+				</div>
+
+				<div className='column'>
+					<p className='title'>Исключение</p>
+					<ul>
+						<li>
+							Включили приборы, не предназначенные для бытового использования,
+							чем вызвали перегрузку сети.
+						</li>
+						<li>Вы использовали технику не по назначению.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div className='accent'>
+				<img src={attentionIcon} alt='icon' />
+				Это демоверсия исключений, мы уместили только некоторые, 
+				<a href='##'>вот основные</a> .
+			</div>
+
+			<button className='btn'>Получить главный приз</button>
 		</div>
 	)
 }
