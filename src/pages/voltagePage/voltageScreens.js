@@ -37,6 +37,7 @@ export const voltageScreens = [
 		coinIconProps: {
 			coinIcon: false,
 			className: '',
+			delay: false,
 		},
 		voltageFinal: false,
 	},
@@ -68,6 +69,7 @@ export const voltageScreens = [
 		coinIconProps: {
 			coinIcon: false,
 			className: '',
+			delay: false,
 		},
 		voltageFinal: false,
 	},
@@ -98,6 +100,7 @@ export const voltageScreens = [
 		coinIconProps: {
 			coinIcon: false,
 			className: '',
+			delay: false,
 		},
 		voltageFinal: false,
 	},
@@ -128,6 +131,7 @@ export const voltageScreens = [
 		coinIconProps: {
 			coinIcon: true,
 			className: 'coin-icon__screen3',
+			delay: 1,
 		},
 		voltageFinal: false,
 	},
@@ -158,6 +162,7 @@ export const voltageScreens = [
 		coinIconProps: {
 			coinIcon: true,
 			className: 'coin-icon__screen4',
+			delay: 1,
 		},
 		voltageFinal: false,
 	},
@@ -188,6 +193,7 @@ export const voltageScreens = [
 		coinIconProps: {
 			coinIcon: true,
 			className: 'coin-icon__screen5',
+			delay: 1,
 		},
 		voltageFinal: false,
 	},
@@ -218,6 +224,7 @@ export const voltageScreens = [
 		coinIconProps: {
 			coinIcon: true,
 			className: 'coin-icon__screen6',
+			delay: 1,
 		},
 		voltageFinal: false,
 	},
@@ -250,6 +257,7 @@ export const voltageScreens = [
 		coinIconProps: {
 			coinIcon: false,
 			className: '',
+			delay: false,
 		},
 		voltageFinal: false,
 	},
@@ -283,6 +291,7 @@ export const voltageScreens = [
 		coinIconProps: {
 			coinIcon: false,
 			className: '',
+			delay: false,
 		},
 		voltageFinal: false,
 	},
@@ -314,6 +323,7 @@ export const voltageScreens = [
 		coinIconProps: {
 			coinIcon: false,
 			className: '',
+			delay: false,
 		},
 		voltageFinal: true,
 	},
