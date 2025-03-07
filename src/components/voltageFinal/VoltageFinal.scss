@@ -1,13 +1,12 @@
 .voltage-final {
 	background: #fff;
-	width: 60%;
+	width: 64%;
 	border-radius: 48px;
 	filter: drop-shadow(0 4px 30px rgba(0, 0, 0, 0.25));
-
 	position: absolute;
-	left: 32%;
-	top: 10%;
-
+	left: 26%;
+	top: 50%;
+	transform: translateY(-50%);
 	padding: 36px 40px 28px;
 
 	svg {

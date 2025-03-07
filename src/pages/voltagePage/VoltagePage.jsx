@@ -6,25 +6,26 @@ import { voltageScreens } from './voltageScreens'
 import coinIcon from '../../resources/voltage/coin_icon.svg'
 import './VoltagePage.scss'
 
+// img
+import bg1 from '../../resources/voltage/volt_bg_1.webp'
+import bg2 from '../../resources/voltage/volt_bg_2.webp'
+import bg3 from '../../resources/voltage/volt_bg_3.webp'
+import bg4 from '../../resources/voltage/volt_bg_4.webp'
+import bg5 from '../../resources/voltage/volt_bg_5.webp'
+import bg6 from '../../resources/voltage/volt_bg_6.webp'
+
 function VoltagePage() {
 	// Состояние для текущего индекса экрана
 	const [currentScreen, setCurrentScreen] = useState(0)
 
 	// Предзагрузка всех фоновых изображений при монтировании
 	useEffect(() => {
-		const images = [
-			require('../../resources/voltage/volt_bg_1.webp'),
-			require('../../resources/voltage/volt_bg_2.webp'),
-			require('../../resources/voltage/volt_bg_3.webp'),
-			require('../../resources/voltage/volt_bg_4.webp'),
-			require('../../resources/voltage/volt_bg_5.webp'),
-			require('../../resources/voltage/volt_bg_6.webp'),
-		]
+		const images = [bg1, bg2, bg3, bg4, bg5, bg6]
 		images.forEach(src => {
 			const img = new Image()
 			img.src = src
 		})
-	}, []) // Пустой массив зависимостей — выполняется один раз при монтировании
+	}, [])
 
 	// Хендлер переключения
 	const handleNextScreen = () => {
