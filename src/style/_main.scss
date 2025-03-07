@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
 
+@font-face {
+	font-family: 'TTFirs-Bold';
+	src: url('../fonts/TTFIRS-BOLD.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
 * {
 	box-sizing: border-box;
-    font-family: 'Golos Text', sans-serif;
-    scroll-behavior: smooth;
+	font-family: 'Golos Text', sans-serif;
+	scroll-behavior: smooth;
 }
 
 img {
 	pointer-events: none;
 }
-
 
 button,
 a {
