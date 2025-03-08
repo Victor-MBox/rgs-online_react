@@ -30,6 +30,10 @@ export const voltageScreens = [
 		},
 		textСontrolPanel: 'Да здесь целый домашний кинотеатр!',
 		textButton: 'Далее',
+		autoSwitchProps: {
+			thereIs: false,
+			delay: '',
+		},
 		invisibleButtonProps: {
 			isVisible: false,
 			className: '',
@@ -40,6 +44,7 @@ export const voltageScreens = [
 			delay: false,
 		},
 		voltageFinal: false,
+		pagination: true,
 	},
 	{
 		id: 2,
@@ -62,6 +67,10 @@ export const voltageScreens = [
 		},
 		textСontrolPanel: 'Помогите починить сгоревшую технику',
 		textButton: 'Помочь',
+		autoSwitchProps: {
+			thereIs: false,
+			delay: '',
+		},
 		invisibleButtonProps: {
 			isVisible: false,
 			className: '',
@@ -72,6 +81,7 @@ export const voltageScreens = [
 			delay: false,
 		},
 		voltageFinal: false,
+		pagination: true,
 	},
 	{
 		id: 3,
@@ -93,6 +103,10 @@ export const voltageScreens = [
 		},
 		textСontrolPanel: 'Выключите телевизор',
 		textButton: '',
+		autoSwitchProps: {
+			thereIs: false,
+			delay: '',
+		},
 		invisibleButtonProps: {
 			isVisible: true,
 			className: 'invisible-button__screen1',
@@ -103,6 +117,7 @@ export const voltageScreens = [
 			delay: false,
 		},
 		voltageFinal: false,
+		pagination: false,
 	},
 	{
 		id: 4,
@@ -124,6 +139,10 @@ export const voltageScreens = [
 		},
 		textСontrolPanel: 'Теперь надо спасти лампу',
 		textButton: '',
+		autoSwitchProps: {
+			thereIs: false,
+			delay: '',
+		},
 		invisibleButtonProps: {
 			isVisible: true,
 			className: 'invisible-button__screen2',
@@ -131,9 +150,10 @@ export const voltageScreens = [
 		coinIconProps: {
 			coinIcon: true,
 			className: 'coin-icon__screen3',
-			delay: 1,
+			delay: 0.8,
 		},
 		voltageFinal: false,
+		pagination: false,
 	},
 	{
 		id: 5,
@@ -155,6 +175,10 @@ export const voltageScreens = [
 		},
 		textСontrolPanel: 'Выключите колонки',
 		textButton: '',
+		autoSwitchProps: {
+			thereIs: false,
+			delay: '',
+		},
 		invisibleButtonProps: {
 			isVisible: true,
 			className: 'invisible-button__screen3',
@@ -162,9 +186,10 @@ export const voltageScreens = [
 		coinIconProps: {
 			coinIcon: true,
 			className: 'coin-icon__screen4',
-			delay: 1,
+			delay: 0.8,
 		},
 		voltageFinal: false,
+		pagination: false,
 	},
 	{
 		id: 6,
@@ -186,6 +211,10 @@ export const voltageScreens = [
 		},
 		textСontrolPanel: 'Теперь — к кондиционеру!',
 		textButton: '',
+		autoSwitchProps: {
+			thereIs: false,
+			delay: '',
+		},
 		invisibleButtonProps: {
 			isVisible: true,
 			className: 'invisible-button__screen4',
@@ -193,9 +222,10 @@ export const voltageScreens = [
 		coinIconProps: {
 			coinIcon: true,
 			className: 'coin-icon__screen5',
-			delay: 1,
+			delay: 0.8,
 		},
 		voltageFinal: false,
+		pagination: false,
 	},
 	{
 		id: 7,
@@ -216,7 +246,11 @@ export const voltageScreens = [
 			className: '',
 		},
 		textСontrolPanel: 'Вы справились!',
-		textButton: '>',
+		textButton: '',
+		autoSwitchProps: {
+			thereIs: true,
+			delay: 1.5,
+		},
 		invisibleButtonProps: {
 			isVisible: false,
 			className: '',
@@ -224,9 +258,10 @@ export const voltageScreens = [
 		coinIconProps: {
 			coinIcon: true,
 			className: 'coin-icon__screen6',
-			delay: 1,
+			delay: 0.8,
 		},
 		voltageFinal: false,
+		pagination: false,
 	},
 	{
 		id: 8,
@@ -250,6 +285,10 @@ export const voltageScreens = [
 
 		textСontrolPanel: 'Произошел скачок напряжения',
 		textButton: 'Далее',
+		autoSwitchProps: {
+			thereIs: false,
+			delay: '',
+		},
 		invisibleButtonProps: {
 			isVisible: false,
 			className: '',
@@ -260,6 +299,7 @@ export const voltageScreens = [
 			delay: false,
 		},
 		voltageFinal: false,
+		pagination: true,
 	},
 	{
 		id: 9,
@@ -284,6 +324,10 @@ export const voltageScreens = [
 
 		textСontrolPanel: 'Произошел скачок напряжения',
 		textButton: 'Далее',
+		autoSwitchProps: {
+			thereIs: false,
+			delay: '',
+		},
 		invisibleButtonProps: {
 			isVisible: false,
 			className: '',
@@ -294,6 +338,7 @@ export const voltageScreens = [
 			delay: false,
 		},
 		voltageFinal: false,
+		pagination: true,
 	},
 	{
 		id: 10,
@@ -316,6 +361,10 @@ export const voltageScreens = [
 
 		textСontrolPanel: '',
 		textButton: '',
+		autoSwitchProps: {
+			thereIs: false,
+			delay: '',
+		},
 		invisibleButtonProps: {
 			isVisible: false,
 			className: '',
@@ -326,5 +375,6 @@ export const voltageScreens = [
 			delay: false,
 		},
 		voltageFinal: true,
+		pagination: true,
 	},
 ]
