@@ -76,7 +76,7 @@ function VoltageFinal() {
 
 			<div className='accent'>
 				<img src={attentionIcon} alt='icon' />
-				Это демоверсия исключений, мы уместили только некоторые, 
+				Это демоверсия исключений, мы уместили только некоторые,
 				<a href='##'>вот основные</a> .
 			</div>
 

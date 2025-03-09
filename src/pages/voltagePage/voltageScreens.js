@@ -16,7 +16,7 @@ export const voltageScreens = [
 		boy: boyImg1,
 		replicaBoyProps: {
 			replicaText: 'Ну наконец-то выходной! Можно спокойно досмотреть сериал.',
-			className: '',
+			className: 'replica__screen1',
 		},
 		womanProps: {
 			woman: false,
@@ -54,7 +54,7 @@ export const voltageScreens = [
 		replicaBoyProps: {
 			replicaText:
 				'Ой... Что это было? Что-то сверкнуло и вся техника разом выключилась.',
-			className: '',
+			className: 'replica__screen2',
 		},
 		womanProps: {
 			woman: false,
@@ -90,7 +90,7 @@ export const voltageScreens = [
 		boy: boyImg1,
 		replicaBoyProps: {
 			replicaText: 'Так, по крайней мере, не будет искрить.',
-			className: '',
+			className: 'replica__screen3',
 		},
 		womanProps: {
 			woman: false,
@@ -126,7 +126,7 @@ export const voltageScreens = [
 		boy: boyImg1,
 		replicaBoyProps: {
 			replicaText: 'Интересно, она успела сгореть?',
-			className: '',
+			className: 'replica__screen4',
 		},
 		womanProps: {
 			woman: false,
@@ -162,7 +162,7 @@ export const voltageScreens = [
 		boy: boyImg1,
 		replicaBoyProps: {
 			replicaText: 'Эх, еще и новые колонки!',
-			className: '',
+			className: 'replica__screen5',
 		},
 		womanProps: {
 			woman: false,
@@ -198,7 +198,7 @@ export const voltageScreens = [
 		boy: boyImg1,
 		replicaBoyProps: {
 			replicaText: 'Остался кондиционер — и всё',
-			className: '',
+			className: 'replica__screen6',
 		},
 		womanProps: {
 			woman: false,
@@ -234,7 +234,7 @@ export const voltageScreens = [
 		boy: boyImg1,
 		replicaBoyProps: {
 			replicaText: 'Фу-у-ух. Это было страшно!',
-			className: '',
+			className: 'replica__screen7',
 		},
 		womanProps: {
 			woman: false,
@@ -271,7 +271,7 @@ export const voltageScreens = [
 		replicaBoyProps: {
 			replicaText:
 				'Вот как всегда — на самом интересном месте! Как так вышло-то?',
-			className: '',
+			className: 'replica__screen8',
 		},
 		womanProps: {
 			woman: womanImg1,
@@ -280,7 +280,7 @@ export const voltageScreens = [
 		replicaWomanProps: {
 			replicaText: 'Случился перепад напряжения в электросети.',
 			replicaTextSpan: '',
-			className: 'replica__woman',
+			className: 'replica__woman replica__woman_8',
 		},
 
 		textСontrolPanel: 'Произошел скачок напряжения',
@@ -309,7 +309,7 @@ export const voltageScreens = [
 		replicaBoyProps: {
 			replicaText:
 				'Телек, кажется, совсем сгорел…  У меня оформлена страховка,  это получится компенсировать?',
-			className: '',
+			className: 'replica__screen9',
 		},
 		womanProps: {
 			woman: womanImg2,
@@ -319,7 +319,7 @@ export const voltageScreens = [
 			replicaText:
 				'Конечно, по риску «Перепад напряжения» вам оплатят ремонт или полную стоимость пострадавших вещей — за каждую ',
 			replicaTextSpan: 'до 10% от лимита, заложенного на «Движимое имущество».',
-			className: 'replica__woman',
+			className: 'replica__woman replica__woman_9',
 		},
 
 		textСontrolPanel: 'Произошел скачок напряжения',

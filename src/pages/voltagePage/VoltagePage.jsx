@@ -14,15 +14,24 @@ import bg4 from '../../resources/voltage/volt_bg_4.webp'
 import bg5 from '../../resources/voltage/volt_bg_5.webp'
 import bg6 from '../../resources/voltage/volt_bg_6.webp'
 import coinIcon from '../../resources/voltage/coin_icon.svg'
+import bgMob1 from '../../resources/voltage/volt_mob_bg_1.webp'
+import bgMob2 from '../../resources/voltage/volt_mob_bg_2-3.webp'
+import bgMob4 from '../../resources/voltage/volt_mob_bg_4.webp'
+import bgMob5 from '../../resources/voltage/volt_mob_bg_5.webp'
+import bgMob6 from '../../resources/voltage/volt_mob_bg_6.webp'
+
 // style
 import './VoltagePage.scss'
 
 function VoltagePage() {
 	const [currentScreen, setCurrentScreen] = useState(0)
 
+	// Предзагрузка фоновых изображений
 	useEffect(() => {
-		// Предзагрузка фоновых изображений
-		const images = [bg1, bg2, bg3, bg4, bg5, bg6]
+		const isMobile = window.innerWidth <= 1024
+		const images = isMobile
+			? [bgMob1, bgMob2, bgMob4, bgMob5, bgMob6]
+			: [bg1, bg2, bg3, bg4, bg5, bg6]
 		images.forEach(src => {
 			const img = new Image()
 			img.src = src
@@ -46,14 +55,11 @@ function VoltagePage() {
 		}
 	}, [currentScreen])
 
-	// Вычисляем данные для пагинации:
-	// Количество экранов с pagination: true
+	// Кол-во экранов с pagination: true
 	const totalPaginationCount = voltageScreens.filter(
 		screen => screen.pagination
 	).length
 
-	// Активный индекс среди экранов с pagination: true.
-	// Считаем, сколько экранов с pagination:true прошло до текущего экрана.
 	const activePaginationIndex =
 		voltageScreens
 			.slice(0, currentScreen + 1)

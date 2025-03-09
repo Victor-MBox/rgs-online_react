@@ -4,7 +4,7 @@
 .screen-container {
 	position: relative;
 	width: 100%;
-	height: 100vh;
+	height: 100dvh;
 	overflow: hidden;
 }
 
@@ -13,7 +13,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100vh;
+	height: 100dvh;
 	overflow: hidden;
 	background-position: center;
 	background-size: cover;
@@ -141,6 +141,29 @@
 		&__screen6 {
 			left: 57%;
 			top: 16%;
+		}
+	}
+}
+@media (max-width: 1024px) {
+	.screen {
+		&_screen1 {
+			background-image: url(../../resources/voltage/volt_mob_bg_1.webp);
+		}
+
+		&_screen2 {
+			background-image: url(../../resources/voltage/volt_mob_bg_2-3.webp);
+		}
+
+		&_screen4 {
+			background-image: url(../../resources/voltage/volt_mob_bg_4.webp);
+		}
+
+		&_screen5 {
+			background-image: url(../../resources/voltage/volt_mob_bg_5.webp);
+		}
+
+		&_screen6 {
+			background-image: url(../../resources/voltage/volt_mob_bg_6.webp);
 		}
 	}
 }
