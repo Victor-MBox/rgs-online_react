@@ -7,5 +7,13 @@
 	border-radius: 100px;
 	padding: 20px 40px 24px 40px;
 	background: #00eef5;
+	transition: 0.3s;
 	cursor: pointer;
+
+	&:hover {
+		background: #00dde3;
+	}
+	&:active {
+		background: #00d0d6;
+	}
 }

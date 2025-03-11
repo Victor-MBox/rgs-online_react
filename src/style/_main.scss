@@ -33,6 +33,14 @@ a {
 
 body {
 	background: #000;
+	padding: 0 15px;
+}
+
+.desktop {
+	display: block;
+}
+.mobile {
+	display: none;
 }
 
 /* Классы анимации для fade */
@@ -49,4 +57,13 @@ body {
 .fade-exit-active {
 	opacity: 0;
 	transition: opacity 500ms ease-in-out;
+}
+
+@media (max-width: 1024px) {
+	.mobile {
+		display: block;
+	}
+	.desktop {
+		display: none;
+	}
 }

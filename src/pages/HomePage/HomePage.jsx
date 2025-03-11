@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 // Компоненты
 import Header from '../../components/header/Header'
 // img
-import backImg from '../../resources/home/home-bg.jpg'
+import backImg from '../../resources/home/home-bg.webp'
+import backImgMob from '../../resources/home/home-bg_mob.webp'
 // scss
 import './HomePage.scss'
 
@@ -12,7 +13,8 @@ function HomePage() {
 	return (
 		<div className='home-wrapper'>
 			<div className='backImg__wrapper'>
-				<img className='backImg' src={backImg} alt='background' />
+				<img className='backImg desktop' src={backImg} alt='background' />
+				<img className='backImg mobile' src={backImgMob} alt='background' />
 				<Link className='circle-btn' to='/voltage'>
 					{' '}
 				</Link>
