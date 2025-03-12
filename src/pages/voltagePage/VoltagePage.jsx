@@ -96,7 +96,13 @@ function VoltagePage() {
 							<img src={sidebar} alt='sidebar' />
 						</div>
 					)}
-					{boy && <img className='screen__boy' src={boy} alt='boy' />}
+
+					{boy && (
+						<div className='screen__boy-container'>
+							<img className='screen__boy' src={boy} alt='boy' />
+						</div>
+					)}
+
 					{replicaBoyProps.replicaText && (
 						<Replica
 							text={replicaBoyProps.replicaText}
