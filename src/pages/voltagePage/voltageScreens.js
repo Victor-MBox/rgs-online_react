@@ -258,7 +258,7 @@ export const voltageScreens = [
 		coinIconProps: {
 			coinIcon: true,
 			className: 'coin-icon__screen6',
-			delay: 0.8,
+			delay: 0.6,
 		},
 		voltageFinal: false,
 		pagination: false,

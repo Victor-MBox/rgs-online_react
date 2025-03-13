@@ -92,8 +92,10 @@
 		gap: 24px;
 		margin: 16px 0 24px;
 		list-style: disc;
-		li {
+		div {
 			width: 50%;
+		}
+		li {
 			font-weight: 400;
 			font-size: 18px;
 			line-height: 150%;
@@ -181,7 +183,69 @@
 }
 
 @media (max-width: 1200px) {
-	.voltage-final__wrapper {
-		min-width: 720px;
+	.voltage-final {
+		&__wrapper {
+			min-width: 720px;
+		}
+		.title {
+			font-size: 26px;
+		}
+
+		.wrapper {
+			margin: 20px 0 22px;
+		}
+		.accent,
+		.list-one li,
+		.exception ul li,
+		.exception span {
+			font-size: 16px;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.voltage-final {
+		svg {
+			display: none;
+		}
+		&__wrapper {
+			min-width: auto;
+			width: 96%;
+			height: 90dvh;
+
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+
+			.btn {
+				right: 50%;
+				bottom: -40px;
+				transform: translateX(50%);
+			}
+		}
+		.title {
+			font-size: 24px;
+		}
+		.wrapper,
+		.list-one,
+		.exception {
+			flex-direction: column;
+		}
+
+		.wrapper .column,
+		.list-one div,
+		.exception .column {
+			width: 100%;
+		}
+
+		.list-one {
+			gap: 4px;
+			li {
+				text-align: left;
+			}
+		}
+		&__scroll {
+			max-height: 80dvh;
+		}
 	}
 }
