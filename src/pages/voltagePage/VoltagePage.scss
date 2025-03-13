@@ -56,6 +56,7 @@
 			rgba(0, 0, 0, 0) 0%,
 			rgba(0, 41, 43, 0.5) 100%
 		);
+		z-index: 9;
 		img {
 			position: absolute;
 			right: 30px;
@@ -81,22 +82,29 @@
 	}
 
 	&__woman {
+		max-height: 74dvh;
+	}
+
+	&__woman-container {
 		position: absolute;
 		bottom: 0px;
-		right: 13%;
+		right: 11%;
 		z-index: 2;
-		height: 74%;
+
+		min-width: 400px;
+		display: flex;
+		align-items: end;
 	}
 
 	&__woman_final {
-		right: auto;
-		left: 1%;
+		max-height: 80dvh;
 	}
 
 	.invisible-button {
 		position: absolute;
 		cursor: pointer;
-		/* border: 2px solid #fff; */
+		border: 2px solid #fff;
+		z-index: 10;
 
 		&__screen1 {
 			left: 37%;
@@ -152,6 +160,71 @@
 		}
 	}
 }
+.screen__woman-container:has(.screen__woman_final) {
+	right: auto;
+	left: 1%;
+}
+
+@media (max-width: 1440px) {
+	.screen {
+		&__boy {
+			max-height: 77dvh;
+		}
+	}
+}
+
+@media (max-width: 1420px) {
+	.screen {
+		&__woman-container {
+			right: 2%;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.screen {
+		background-position: 70% center;
+		&__sidebar-wrapper img {
+			right: 10%;
+		}
+		&__boy {
+			max-height: 74dvh;
+		}
+		&__screen1,
+		&__screen5,
+		&__screen7 {
+			left: 28%;
+		}
+		&__screen3,
+		&__screen4,
+		&__screen6 {
+			left: 27%;
+		}
+
+		.invisible-button {
+			&__screen1 {
+				left: 33%;
+				width: 26%;
+			}
+			&__screen2 {
+				left: 79%;
+			}
+			&__screen4 {
+				left: 28%;
+				width: 34%;
+			}
+		}
+
+		&__woman-container {
+			right: 2%;
+		}
+
+		&__woman {
+			max-height: 70dvh;
+		}
+	}
+}
+
 @media (max-width: 1024px) {
 	.screen {
 		&_screen1 {

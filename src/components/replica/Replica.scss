@@ -102,3 +102,43 @@
 		}
 	}
 }
+
+@media (max-width: 1420px) {
+	.replica {
+		&__screen8 {
+			left: 29%;
+			top: 12%;
+		}
+
+		&__screen9 {
+			left: 29%;
+			top: 28%;
+		}
+
+		&__woman_9 {
+			top: 48%;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.replica {
+		font-size: 16px;
+		line-height: 140%;
+		max-width: 400px;
+
+		&__screen8 {
+			left: 29%;
+			top: 12%;
+		}
+
+		&__screen9 {
+			left: 29%;
+			top: 38%;
+		}
+
+		&__woman_9 {
+			top: 58%;
+		}
+	}
+}

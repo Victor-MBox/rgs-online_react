@@ -110,11 +110,13 @@ function VoltagePage() {
 						/>
 					)}
 					{womanProps.woman && (
-						<img
-							className={`screen__woman ${womanProps.className || ''}`}
-							src={womanProps.woman}
-							alt='woman'
-						/>
+						<div className='screen__woman-container'>
+							<img
+								className={`screen__woman ${womanProps.className || ''}`}
+								src={womanProps.woman}
+								alt='woman'
+							/>
+						</div>
 					)}
 					{replicaWomanProps.replicaText && (
 						<Replica
