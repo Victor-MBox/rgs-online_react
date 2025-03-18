@@ -72,7 +72,7 @@
 
 	&__boy-container {
 		position: absolute;
-		bottom: -180px;
+		bottom: -18%;
 		left: 0;
 		z-index: 2;
 		min-width: 560px;
@@ -82,13 +82,13 @@
 	}
 
 	&__woman {
-		max-height: 74dvh;
+		max-height: 110dvh;
 	}
 
 	&__woman-container {
 		position: absolute;
-		bottom: 0px;
-		right: 11%;
+		bottom: -34%;
+		right: 12%;
 		z-index: 2;
 
 		min-width: 400px;
@@ -129,7 +129,7 @@
 
 		&__screen4 {
 			left: 33%;
-			top: 9%;
+			top: 7%;
 			width: 32%;
 			height: 17%;
 		}
@@ -241,14 +241,7 @@
 .screen__woman-container:has(.screen__woman_final) {
 	right: auto;
 	left: 1%;
-}
-
-@media (max-width: 1440px) {
-	/* .screen {
-		&__boy {
-			max-height: 77dvh;
-		}
-	} */
+	bottom: 0;
 }
 
 @media (max-width: 1420px) {
@@ -281,7 +274,7 @@
 			right: 10%;
 		}
 		&__boy {
-			max-height: 74dvh;
+			max-height: 94dvh;
 		}
 		&__screen1,
 		&__screen5,
@@ -312,9 +305,6 @@
 			right: 2%;
 		}
 
-		&__woman {
-			max-height: 70dvh;
-		}
 		.replica {
 			&__screen8 {
 				left: 29%;
@@ -330,6 +320,9 @@
 				top: 58%;
 			}
 		}
+	}
+	.screen__woman-container:has(.screen__woman_final) {
+		left: -2%;
 	}
 }
 
@@ -367,51 +360,26 @@
 			max-height: 54dvh;
 		}
 		&__boy-container {
-			left: -4%;
+			left: -2%;
+			bottom: -2%;
 		}
 		&__woman {
-			max-height: 54dvh;
+			max-height: 58dvh;
 		}
 
 		.replica {
-			font-size: 14px;
 			svg {
 				left: 20px;
 				bottom: auto;
 				top: -28px;
 				transform: rotate(180deg) scale(-1, 1);
 			}
-			&__screen1 {
-				left: 24%;
-				top: auto;
-				bottom: 26%;
-			}
-
-			&__screen2 {
-				left: 24%;
-				top: auto;
-				bottom: 26%;
-			}
-			&__screen3 {
-				left: 24%;
-				top: auto;
-				bottom: 26%;
-			}
-			&__screen4 {
-				left: 24%;
-				top: auto;
-				bottom: 26%;
-			}
-			&__screen5 {
-				left: 24%;
-				top: auto;
-				bottom: 26%;
-			}
-			&__screen6 {
-				left: 24%;
-				top: auto;
-				bottom: 26%;
-			}
+			&__screen1,
+			&__screen2,
+			&__screen3,
+			&__screen4,
+			&__screen5,
+			&__screen6,
 			&__screen7 {
 				left: 24%;
 				top: auto;
@@ -442,8 +410,9 @@
 				}
 			}
 		}
-		.screen__woman-container {
-			min-width: 360px;
+		&__woman-container {
+			min-width: 260px;
+			bottom: -6%;
 			right: 0;
 			&:has(.screen__woman_final) {
 				display: none;
@@ -502,6 +471,63 @@
 				left: 36%;
 				top: 10%;
 			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.screen {
+		.replica {
+			&__screen1,
+			&__screen2,
+			&__screen3,
+			&__screen4,
+			&__screen5,
+			&__screen6,
+			&__screen7 {
+				left: 50%;
+				transform: translate(-50%);
+				top: auto;
+				bottom: 22%;
+				min-width: 62%;
+			}
+			&__screen8,
+			&__screen9 {
+				left: 50%;
+				transform: translate(-50%);
+				top: auto;
+				bottom: 56%;
+				min-width: 62%;
+
+				svg {
+					left: 20px;
+					bottom: -26px;
+					top: auto;
+					transform: none;
+				}
+			}
+			&__woman_8,
+			&__woman_9 {
+				right: 56%;
+				transform: translateX(50%);
+				top: auto;
+				bottom: 18%;
+				min-width: 84%;
+
+				svg {
+					left: auto;
+					bottom: auto;
+					top: -28px;
+					transform: rotate(180deg);
+				}
+			}
+		}
+		&__boy-container {
+			left: -6%;
+		}
+		&__woman-container {
+			min-width: 160px;
+			right: -8%;
 		}
 	}
 }

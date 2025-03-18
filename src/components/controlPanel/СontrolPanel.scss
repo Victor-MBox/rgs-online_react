@@ -49,3 +49,19 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.controlPanel {
+		min-width: 90%;
+		min-height: 82px;
+		gap: 6px;
+		bottom: 30px;
+		.btn {
+			padding: 18px 12px;
+		}
+		p {
+			font-size: 14px;
+			padding: 0;
+		}
+	}
+}

@@ -214,7 +214,7 @@
 			height: 90dvh;
 
 			left: 50%;
-			top: 50%;
+			top: 48%;
 			transform: translate(-50%, -50%);
 
 			.btn {
@@ -246,6 +246,53 @@
 		}
 		&__scroll {
 			max-height: 80dvh;
+		}
+		.accent {
+			div {
+				flex: 1;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.voltage-final {
+		padding: 0 12px 0 0;
+
+		&__wrapper {
+			border-radius: 32px;
+			height: 88dvh;
+
+			.btn {
+				min-width: 80%;
+				font-size: 14px;
+			}
+		}
+
+		&__scroll {
+			margin: 24px 10px 50px 16px;
+		}
+
+		.wrapper .column {
+			height: 70px;
+			p {
+				position: relative;
+				z-index: 2;
+				font-size: 14px;
+			}
+			img {
+				right: -4px;
+				width: 130px;
+			}
+			&:last-child img {
+				bottom: -50px;
+			}
+		}
+		.accent,
+		.list-one li,
+		.exception ul li,
+		.exception span {
+			font-size: 14px;
 		}
 	}
 }
