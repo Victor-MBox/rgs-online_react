@@ -1,0 +1,294 @@
+@use '../../style/variables' as vars;
+
+.backImg {
+	position: relative;
+	z-index: 0;
+	width: 100%;
+
+	&__wrapper {
+		width: 100%;
+		position: absolute;
+		left: 50%;
+		top: 0;
+		transform: translateX(-50%);
+
+		.hide-link {
+			position: absolute;
+			left: 0;
+			top: 44%;
+		}
+	}
+}
+
+.home-wrapper {
+	.circle-btn {
+		width: 14%;
+		border-radius: 100%;
+		position: absolute;
+		left: 71%;
+		top: 65%;
+		transform: translateX(-50%);
+
+		.circle {
+			width: 100%;
+			height: 100%;
+			transition: 0.3s;
+		}
+
+		.flag {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			width: 60%;
+		}
+
+		&:hover {
+			.circle {
+				transform: scale(1.2);
+			}
+		}
+	}
+}
+
+.home {
+	position: relative;
+	* {
+		color: vars.$text-color;
+	}
+
+	.container {
+		filter: drop-shadow(0 4px 30px rgba(0, 0, 0, 0.25));
+		background: #fff;
+		border-radius: 64px;
+		padding: 40px 48px 48px 48px;
+		position: relative;
+	}
+
+	&__h1 {
+		font-family: vars.$ttfirs;
+		font-weight: 400;
+		font-size: 52px;
+		line-height: 90%;
+		text-align: center;
+		margin-bottom: 12px;
+	}
+	&__subtitle {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 140%;
+		text-align: center;
+		margin-bottom: 24px;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		margin-bottom: 24px;
+
+		& div {
+			width: 50%;
+			background: #f0f6f6;
+			border-radius: 24px;
+			padding: 24px 32px 46px;
+
+			&:first-child {
+				background-image: url(../../resources/home/flag.svg);
+				background-position: 360px 10px;
+				background-repeat: no-repeat;
+				background-size: 160px;
+			}
+
+			&:last-child {
+				background-image: url(../../resources/home/present.svg);
+				background-position: 340px 4px;
+				background-repeat: no-repeat;
+				background-size: 180px;
+			}
+
+			& p {
+				width: 270px;
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 140%;
+				text-align: center;
+			}
+		}
+	}
+	.btn {
+		position: absolute;
+		left: 50%;
+		bottom: -30px;
+		transform: translateX(-50%);
+		border: 10px solid #fff;
+
+		padding: 16px 70px 20px;
+	}
+}
+@media (max-width: 1200px) {
+	.home {
+		&__h1 {
+			font-size: 42px;
+		}
+		.container {
+			padding: 30px 38px 38px 38px;
+		}
+		&__subtitle {
+			margin-bottom: 16px;
+		}
+		&__wrapper div {
+			padding: 24px 22px 26px;
+			&:first-child {
+				background-position: 320px 10px;
+				background-size: 130px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.backImg__wrapper {
+		top: -300px;
+		.circle-btn {
+			width: 19%;
+			height: 9%;
+			top: 70%;
+		}
+	}
+	.home {
+		&__wrapper {
+			flex-wrap: wrap;
+			div {
+				width: 100%;
+				padding: 40px;
+				&:first-child,
+				&:last-child {
+					background-position: right top;
+				}
+
+				p {
+					text-align: left;
+					width: auto;
+					br {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.backImg__wrapper {
+		top: -100px;
+	}
+
+	.home {
+		&__wrapper {
+			div {
+				p {
+					br {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.header {
+		padding-top: 12px;
+		margin-bottom: 16px;
+		.container {
+			padding: 12px 16px;
+		}
+		img {
+			width: 120px;
+		}
+		.btn {
+			font-size: 12px;
+			line-height: 120%;
+			padding: 10px 18px 12px;
+		}
+	}
+	.backImg__wrapper {
+		top: 0;
+	}
+	.home {
+		.container {
+			padding: 20px 16px;
+			border-radius: 24px;
+		}
+		&__h1 {
+			font-size: 28px;
+			margin-bottom: 8px;
+		}
+		&__subtitle {
+			font-size: 14px;
+			margin-bottom: 8px;
+		}
+		&__wrapper {
+			margin-bottom: 0;
+			div {
+				border-radius: 12px;
+				padding: 20px;
+
+				&:first-child {
+					background-position: 100% 0%;
+					background-size: 120px;
+				}
+				&:last-child {
+					background-position: 110% -20%;
+					background-size: 130px;
+				}
+				p {
+					font-size: 14px;
+				}
+			}
+		}
+		.btn {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 481px) {
+	.home {
+		&__h1 {
+			font-size: 26px;
+		}
+		&__wrapper {
+			gap: 8px;
+			div {
+				padding: 12px 16px;
+				&:first-child {
+					background-position: 100% 10px;
+					background-size: 80px;
+				}
+				&:last-child {
+					background-position: 110% 10px;
+					background-size: 100px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 381px) {
+	.header img {
+		width: 90px;
+	}
+	.home {
+		&__h1 {
+			font-size: 20px;
+		}
+		&__subtitle {
+			font-size: 12px;
+		}
+		&__wrapper div p {
+			font-size: 12px;
+		}
+	}
+}

@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-// Компоненты
+// components
 import Header from '../../components/header/Header'
 // img
-import backImg from '../../resources/home/home-bg.webp'
+import backImg from '../../resources/home/home_bg_01.webp'
 import backImgMob from '../../resources/home/home-bg_mob.webp'
 import circleImg from '../../resources/home/circle.svg'
 import flagImg from '../../resources/home/flag.svg'
