@@ -127,7 +127,7 @@
 	}
 }
 @media (max-width: 1200px) {
-	.home {
+	.previewVoltagePage {
 		&__h1 {
 			font-size: 42px;
 		}
@@ -156,7 +156,7 @@
 			top: 70%;
 		}
 	}
-	.home {
+	.previewVoltagePage {
 		&__wrapper {
 			flex-wrap: wrap;
 			div {
@@ -184,7 +184,7 @@
 		top: -100px;
 	}
 
-	.home {
+	.previewVoltagePage {
 		&__wrapper {
 			div {
 				p {
@@ -216,7 +216,7 @@
 	.backImg__wrapper {
 		top: 0;
 	}
-	.home {
+	.previewVoltagePage {
 		.container {
 			padding: 20px 16px;
 			border-radius: 24px;
@@ -255,7 +255,7 @@
 }
 
 @media (max-width: 481px) {
-	.home {
+	.previewVoltagePage {
 		&__h1 {
 			font-size: 26px;
 		}
@@ -280,7 +280,7 @@
 	.header img {
 		width: 90px;
 	}
-	.home {
+	.previewVoltagePage {
 		&__h1 {
 			font-size: 20px;
 		}
