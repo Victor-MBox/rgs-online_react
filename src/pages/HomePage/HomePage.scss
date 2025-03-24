@@ -116,11 +116,44 @@
 		}
 	}
 }
-
+/* 
 @media (max-width: 1024px) {
-}
+} */
 
 @media (max-width: 900px) {
+	.home {
+		.container {
+			border-radius: 24px;
+			width: auto;
+		}
+		&__wrapper {
+			width: 100%;
+			max-width: none;
+			padding: 20px 16px;
+		}
+		&__img {
+			display: none;
+		}
+		&__h1 {
+			font-size: 28px;
+			margin-bottom: 8px;
+		}
+		p {
+			font-size: 14px;
+			margin-bottom: 8px;
+		}
+		.btn {
+			margin-top: 14px;
+			width: 100%;
+		}
+		&__footer {
+			border-radius: 24px 24px 0 0;
+			padding: 24px 0 28px;
+		}
+		&__footer-title {
+			font-size: 24px;
+		}
+	}
 }
 
 @media (max-width: 768px) {
