@@ -1,12 +1,43 @@
-import { animate } from 'framer-motion'
+// img
+import presentClose1 from '../../resources/final/present_1.webp'
+import presentClose2 from '../../resources/final/present_2.webp'
+import presentOpen1 from '../../resources/final/present_3-1.webp'
+import presentOpen2 from '../../resources/final/present_3-2.webp'
+
+import rays from '../../resources/final/rays.svg'
+
+import bg1 from '../../resources/final/final_bg_1.webp'
+import bg2 from '../../resources/final/final_bg_2.webp'
+import bg3 from '../../resources/final/final_bg_3.webp'
+
+import bgMob1 from '../../resources/final/final_mob_bg_1.webp'
+import bgMob2 from '../../resources/final/final_mob_bg_2.webp'
+import bgMob3 from '../../resources/final/final_mob_bg_3.webp'
+
+export const allImages = {
+	presentClose1,
+	presentClose2,
+	presentOpen1,
+	presentOpen2,
+	rays,
+	bg1,
+	bg2,
+	bg3,
+	bgMob1,
+	bgMob2,
+	bgMob3,
+}
 
 export const finishScreens = [
 	{
 		id: 1,
-		bgClassName: 'final-screen_screen1',
+		bgNameProps: {
+			img: 'bg1',
+			mob: 'bgMob1',
+		},
 		autoSwitchProps: {
 			thereIs: true,
-			delay: '2',
+			delay: '1.2',
 		},
 		presentCloseProps: {
 			img: false,
@@ -31,10 +62,13 @@ export const finishScreens = [
 	},
 	{
 		id: 2,
-		bgClassName: 'final-screen_screen2',
+		bgNameProps: {
+			img: 'bg2',
+			mob: 'bgMob2',
+		},
 		autoSwitchProps: {
 			thereIs: true,
-			delay: '2',
+			delay: '1.2',
 		},
 		presentCloseProps: {
 			img: false,
@@ -59,14 +93,17 @@ export const finishScreens = [
 	},
 	{
 		id: 3,
-		bgClassName: 'final-screen_screen3',
+		bgNameProps: {
+			img: 'bg3',
+			mob: 'bgMob3',
+		},
 		autoSwitchProps: {
 			thereIs: false,
 			delay: '',
 		},
 		presentCloseProps: {
 			img: presentClose1,
-			className: '',
+			className: 'one',
 		},
 		presentRaysProps: {
 			img: rays,
@@ -87,21 +124,24 @@ export const finishScreens = [
 	},
 	{
 		id: 4,
-		bgClassName: 'final-screen_screen3',
+		bgNameProps: {
+			img: 'bg3',
+			mob: 'bgMob3',
+		},
 		autoSwitchProps: {
 			thereIs: true,
-			delay: '2',
+			delay: '1.2',
 		},
 		presentCloseProps: {
 			img: presentClose2,
-			className: '',
+			className: 'two',
 		},
 		presentRaysProps: {
 			img: rays,
 			className: '',
 		},
 		animateIconProps: {
-			thereIs: true,
+			thereIs: false,
 			className: '',
 		},
 		presentOpenProps: {
@@ -116,7 +156,10 @@ export const finishScreens = [
 	},
 	{
 		id: 5,
-		bgClassName: 'final-screen_screen3',
+		bgNameProps: {
+			img: 'bg3',
+			mob: 'bgMob3',
+		},
 		autoSwitchProps: {
 			thereIs: false,
 			delay: '',
@@ -134,9 +177,9 @@ export const finishScreens = [
 			className: '',
 		},
 		presentOpenProps: {
-			img1: img1,
+			img1: presentOpen1,
 			className1: '',
-			img2: img2,
+			img2: presentOpen2,
 			className2: '',
 		},
 		contentCardPrors: {

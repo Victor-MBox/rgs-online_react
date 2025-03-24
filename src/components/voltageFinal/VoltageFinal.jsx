@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 // img
 import icon1 from '../../resources/voltage/key_icon.svg'
@@ -83,7 +84,9 @@ function VoltageFinal() {
 					</div>
 				</div>
 			</div>
-			<button className='btn'>Получить главный приз</button>
+			<Link className='btn ' to='/finish'>
+				Получить главный приз
+			</Link>
 		</div>
 	)
 }
