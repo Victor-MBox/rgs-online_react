@@ -17,10 +17,10 @@ function App() {
 		<AnimatePresence mode='wait'>
 			<motion.div
 				key={location.pathname}
-				initial={{ filter: 'blur(10px)', opacity: 0 }}
+				initial={{ filter: 'blur(10px)', opacity: 0.6 }}
 				animate={{ filter: 'blur(0px)', opacity: 1 }}
-				exit={{ filter: 'blur(10px)', opacity: 0 }}
-				transition={{ duration: 0.2, ease: 'easeInOut' }}
+				exit={{ filter: 'blur(10px)', opacity: 0.6 }}
+				transition={{ duration: 0.1, ease: 'easeInOut' }}
 			>
 				<Routes location={location}>
 					<Route path='/' element={<HomePage />} />

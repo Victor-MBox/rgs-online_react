@@ -10,6 +10,13 @@
 	transition: 0.3s;
 	cursor: pointer;
 
+	p {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 120%;
+		color: #1a1d1e;
+	}
+
 	&:hover {
 		background: #00dde3;
 	}

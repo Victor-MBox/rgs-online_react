@@ -109,8 +109,33 @@ function FinishPage() {
 											промокод:
 										</div>
 										<div className='copy'>
-											<p>XXXXXX</p>
-											<button className='btn'>Скопировать</button>
+											<p className='code'>XXXXXX</p>
+											<button className='btn'>
+												{' '}
+												<p>Скопировать</p>{' '}
+												<svg
+													width='22'
+													height='22'
+													viewBox='0 0 22 22'
+													fill='none'
+													xmlns='http://www.w3.org/2000/svg'
+												>
+													<path
+														d='M19 7H9C7.89543 7 7 7.89543 7 9V19C7 20.1046 7.89543 21 9 21H19C20.1046 21 21 20.1046 21 19V9C21 7.89543 20.1046 7 19 7Z'
+														stroke='black'
+														stroke-width='2'
+														stroke-linecap='round'
+														stroke-linejoin='round'
+													/>
+													<path
+														d='M3 15C1.9 15 1 14.1 1 13V3C1 1.9 1.9 1 3 1H13C14.1 1 15 1.9 15 3'
+														stroke='black'
+														stroke-width='2'
+														stroke-linecap='round'
+														stroke-linejoin='round'
+													/>
+												</svg>{' '}
+											</button>
 										</div>
 										<p className='conditions'>
 											*Скидка 20% по промокоду не суммируется с другими акциями
@@ -128,7 +153,7 @@ function FinishPage() {
 											</p>
 										</div>
 										<button className='btn footer'>
-											Подключить защиту со скидкой
+											<p>Подключить защиту со скидкой</p>
 										</button>
 									</div>
 									<img className='two' src={presentOpenProps.img2} alt='img' />

@@ -1,6 +1,7 @@
 @use '../../style/variables' as vars;
 
 .finishPage {
+	width: 100%;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -109,13 +110,18 @@
 					align-items: center;
 					background: #f0f6f6;
 					margin-bottom: 16px;
-					p {
+					.code {
 						font-family: vars.$ttfirs;
 						font-weight: 400;
 						font-size: 40px;
 						line-height: 100%;
 						text-align: center;
 						color: #1a1d1e;
+					}
+					.btn {
+						svg {
+							display: none;
+						}
 					}
 				}
 			}
@@ -156,6 +162,117 @@
 				bottom: -30px;
 				right: 40px;
 				border: 10px solid #fff;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.finishPage {
+		.present-finish {
+			.card {
+				.title {
+					font-size: 32px;
+				}
+				&__wrapper {
+					border-radius: 32px;
+					width: 590px;
+				}
+				&__footer {
+					width: 660px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.finishPage {
+		overflow: hidden;
+		.present__package {
+			&.one {
+				max-width: 66%;
+			}
+			&.two {
+				max-width: 160%;
+			}
+		}
+		.present-finish {
+			.card {
+				.title {
+					font-size: 28px;
+					margin-bottom: 8px;
+				}
+				.sub-title {
+					font-size: 14px;
+					margin-bottom: 8px;
+				}
+				.conditions {
+					font-size: 12px;
+					width: auto;
+				}
+				.copy {
+					position: relative;
+					height: 67px;
+					justify-content: center;
+					width: 100%;
+					.code {
+						font-size: 24px;
+						padding-top: 8px;
+					}
+					.btn {
+						position: absolute;
+						right: 8px;
+						top: 50%;
+						transform: translateY(-50%);
+						padding: 16px;
+						p {
+							display: none;
+						}
+						svg {
+							display: block;
+						}
+					}
+				}
+				&__wrapper {
+					top: 230px;
+					width: 96%;
+					padding: 20px 26px 20px;
+				}
+				&__footer-wrapper {
+					top: 520px;
+					width: 96%;
+					img {
+						display: none;
+					}
+					p {
+						width: auto;
+						position: relative;
+						right: auto;
+						top: auto;
+					}
+				}
+				&__footer {
+					width: auto;
+					height: auto;
+					padding: 20px 20px 100px 20px;
+				}
+				.btn.footer {
+					position: absolute;
+					bottom: -30px;
+					right: 50%;
+					transform: translateX(50%);
+					p {
+						font-size: 14px;
+					}
+				}
+			}
+			.one {
+				top: 80px;
+			}
+			.two {
+				right: -12%;
+				bottom: -3%;
 			}
 		}
 	}

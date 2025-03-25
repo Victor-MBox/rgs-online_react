@@ -37,7 +37,7 @@ export const finishScreens = [
 		},
 		autoSwitchProps: {
 			thereIs: true,
-			delay: '1.2',
+			delay: '0.7',
 		},
 		presentCloseProps: {
 			img: false,
@@ -68,7 +68,7 @@ export const finishScreens = [
 		},
 		autoSwitchProps: {
 			thereIs: true,
-			delay: '1.2',
+			delay: '0.9',
 		},
 		presentCloseProps: {
 			img: false,
@@ -130,7 +130,7 @@ export const finishScreens = [
 		},
 		autoSwitchProps: {
 			thereIs: true,
-			delay: '1.2',
+			delay: '1',
 		},
 		presentCloseProps: {
 			img: presentClose2,
