@@ -22,7 +22,7 @@ function PreviewDisasterPage() {
 				<img className='backImg desktop' src={backImg} alt='background' />
 				<img className='backImg mobile' src={backImgMob} alt='background' />
 
-				<Link className='circle-btn' to='/Disaster'>
+				<Link className='circle-btn' to='/disaster'>
 					<img className='circle' src={circleImg} alt='icon' />
 					<img className='flag' src={flagImg} alt='icon' />
 				</Link>
