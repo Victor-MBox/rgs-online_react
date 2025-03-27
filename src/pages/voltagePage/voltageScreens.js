@@ -101,7 +101,7 @@ export const voltageScreens = [
 			replicaTextSpan: '',
 			className: '',
 		},
-		textСontrolPanel: 'Выключите телевизор',
+		textСontrolPanel: 'Нажмите на телевизор, чтобы выключить его',
 		textButton: '',
 		autoSwitchProps: {
 			thereIs: false,
@@ -137,7 +137,7 @@ export const voltageScreens = [
 			replicaTextSpan: '',
 			className: '',
 		},
-		textСontrolPanel: 'Теперь надо спасти лампу',
+		textСontrolPanel: 'Теперь надо спасти лампу — нажмите на нее',
 		textButton: '',
 		autoSwitchProps: {
 			thereIs: false,
@@ -173,7 +173,7 @@ export const voltageScreens = [
 			replicaTextSpan: '',
 			className: '',
 		},
-		textСontrolPanel: 'Выключите колонки',
+		textСontrolPanel: 'Выключите колонки нажатием',
 		textButton: '',
 		autoSwitchProps: {
 			thereIs: false,
@@ -209,7 +209,7 @@ export const voltageScreens = [
 			replicaTextSpan: '',
 			className: '',
 		},
-		textСontrolPanel: 'Теперь — к кондиционеру!',
+		textСontrolPanel: 'Теперь — к кондиционеру! Нажмите на него',
 		textButton: '',
 		autoSwitchProps: {
 			thereIs: false,
@@ -317,7 +317,7 @@ export const voltageScreens = [
 		},
 		replicaWomanProps: {
 			replicaText:
-				'Конечно, по риску «Перепад напряжения» вам оплатят ремонт или полную стоимость пострадавших вещей — за каждую ',
+				'Конечно! Понадобится заключение от сервисного центра. По риску «Перепад напряжения» вам оплатят ремонт техники. А если он невозможен, то полную стоимость пострадавших вещей — за каждую ',
 			replicaTextSpan: 'до 10% от лимита, заложенного на «Движимое имущество».',
 			className: 'replica__woman replica__woman_9',
 		},

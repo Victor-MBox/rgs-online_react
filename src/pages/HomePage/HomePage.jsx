@@ -78,7 +78,7 @@ function HomePage() {
 								из них и скидка на страховую защиту жилья в конце игры.
 							</span>
 						</p>
-						<Link className='btn' to='/preview-voltage'>
+						<Link className='btn' to='/preview-disaster'>
 							Играть
 						</Link>
 					</div>

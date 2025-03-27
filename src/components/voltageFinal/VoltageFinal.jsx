@@ -33,7 +33,7 @@ function VoltageFinal() {
 						</div>
 
 						<div className='column'>
-							<p>Покупку новой</p>
+							<p>Покупку новой, если ремонт невозможен</p>
 							<img src={icon2} alt='icon' />
 						</div>
 					</div>
