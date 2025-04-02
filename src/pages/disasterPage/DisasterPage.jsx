@@ -5,6 +5,7 @@ import Replica from '../../components/replica/Replica'
 import { disasterScreens } from './disasterScreens'
 // components
 import ControlPanel from '../../components/controlPanel/СontrolPanel'
+import Banner from '../../components/disaster/banner'
 // img
 import bg1 from '../../resources/disaster/preview_disaster_bg_01.webp'
 import bg2 from '../../resources/disaster/preview_disaster_bg_02.webp'
@@ -58,6 +59,7 @@ function DisasterPage() {
 		bgClassName,
 		sidebar,
 		girl,
+		banner,
 		womanProps,
 		replicaGirlProps,
 		replicaWomanProps,
@@ -98,6 +100,8 @@ function DisasterPage() {
 							className={replicaGirlProps.className}
 						/>
 					)}
+
+					{banner && <Banner />}
 
 					{/* 
 					{womanProps.woman && (

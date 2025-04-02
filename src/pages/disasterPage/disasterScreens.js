@@ -16,6 +16,7 @@ export const disasterScreens = [
 				'Ничего себе, окно разбилось! Может, из-за сильного ветра? А вдруг что-то другое произошло? Что же теперь делать…',
 			className: 'replica__screen1',
 		},
+		banner: false,
 		womanProps: {
 			woman: false,
 			className: '',
@@ -43,12 +44,12 @@ export const disasterScreens = [
 		id: 2,
 		bgClassName: 'screen_screen2',
 		sidebar: sidebar5,
-		girl: girlImg1,
+		girl: false,
 		replicaGirlProps: {
-			replicaText:
-				'Ничего себе, окно разбилось! Может, из-за сильного ветра? А вдруг что-то другое произошло? Что же теперь делать…',
-			className: 'replica__screen1',
+			replicaText: '',
+			className: '',
 		},
+		banner: true,
 		womanProps: {
 			woman: false,
 			className: '',
@@ -82,6 +83,7 @@ export const disasterScreens = [
 				'Ничего себе, окно разбилось! Может, из-за сильного ветра? А вдруг что-то другое произошло? Что же теперь делать…',
 			className: 'replica__screen1',
 		},
+		banner: false,
 		womanProps: {
 			woman: false,
 			className: '',
@@ -106,7 +108,7 @@ export const disasterScreens = [
 	},
 
 	{
-		id: 1,
+		id: 4,
 		bgClassName: 'screen_screen1',
 		sidebar: sidebar5,
 		girl: girlImg1,
