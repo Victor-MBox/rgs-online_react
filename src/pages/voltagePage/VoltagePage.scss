@@ -9,556 +9,568 @@
 	background: #000;
 }
 
-.screen {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100dvh;
-	overflow: hidden;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	/* transition: 0.3s; */
-
-	&_screen1 {
-		background-image: url(../../resources/voltage/volt_bg_1.webp);
-	}
-
-	&_screen2 {
-		background-image: url(../../resources/voltage/volt_bg_2.webp);
-	}
-
-	&_screen3 {
-		background-image: url(../../resources/voltage/volt_bg_3.webp);
-	}
-
-	&_screen4 {
-		background-image: url(../../resources/voltage/volt_bg_4.webp);
-	}
-
-	&_screen5 {
-		background-image: url(../../resources/voltage/volt_bg_5.webp);
-	}
-
-	&_screen6 {
-		background-image: url(../../resources/voltage/volt_bg_6.webp);
-	}
-
-	&__sidebar-wrapper {
+.viltage {
+	.screen {
 		position: absolute;
-		right: 0;
 		top: 0;
-		z-index: 1;
-		width: 14%;
-		height: 100%;
-		background: linear-gradient(
-			90deg,
-			rgba(0, 0, 0, 0) 0%,
-			rgba(0, 41, 43, 0.5) 100%
-		);
-		z-index: 9;
-		img {
-			position: absolute;
-			right: 30px;
-			top: 50%;
-			transform: translateY(-50%);
-			width: 66%;
-		}
-	}
-
-	&__boy {
-		max-height: 96dvh;
-	}
-
-	&__boy-container {
-		position: absolute;
-		bottom: -18%;
 		left: 0;
-		z-index: 2;
-		min-width: 560px;
-		width: 38%;
-		display: flex;
-		align-items: end;
-	}
+		width: 100%;
+		height: 100dvh;
+		overflow: hidden;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		/* transition: 0.3s; */
 
-	&__woman {
-		max-height: 110dvh;
-	}
-
-	&__woman-container {
-		position: absolute;
-		bottom: -34%;
-		right: 12%;
-		z-index: 2;
-
-		min-width: 400px;
-		display: flex;
-		align-items: end;
-	}
-
-	&__woman_final {
-		max-height: 80dvh;
-	}
-
-	.invisible-button {
-		position: absolute;
-		cursor: pointer;
-		/* border: 2px solid #fff; */
-		z-index: 10;
-
-		&__screen1 {
-			left: 37%;
-			top: 36%;
-			width: 25%;
-			height: 25%;
+		&_screen1 {
+			background-image: url(../../resources/voltage/volt_bg_1.webp);
 		}
 
-		&__screen2 {
-			left: 77%;
-			top: 47%;
-			width: 12%;
-			height: 15%;
+		&_screen2 {
+			background-image: url(../../resources/voltage/volt_bg_2.webp);
 		}
 
-		&__screen3 {
-			left: 64%;
-			top: 51%;
-			width: 10%;
-			height: 32%;
+		&_screen3 {
+			background-image: url(../../resources/voltage/volt_bg_3.webp);
 		}
 
-		&__screen4 {
-			left: 33%;
-			top: 7%;
-			width: 32%;
-			height: 17%;
-		}
-	}
-	.coin-icon {
-		position: absolute;
-		z-index: 4;
-		width: 8.5%;
-
-		&__screen3 {
-			left: 56%;
-			top: 38%;
+		&_screen4 {
+			background-image: url(../../resources/voltage/volt_bg_4.webp);
 		}
 
-		&__screen4 {
-			left: 76%;
-			top: 48%;
+		&_screen5 {
+			background-image: url(../../resources/voltage/volt_bg_5.webp);
 		}
 
-		&__screen5 {
-			left: 67%;
-			top: 64%;
+		&_screen6 {
+			background-image: url(../../resources/voltage/volt_bg_6.webp);
 		}
 
-		&__screen6 {
-			left: 57%;
-			top: 14%;
-		}
-	}
-	.replica {
-		&__screen1 {
-			left: 24%;
-			top: 24%;
-		}
-
-		&__screen2 {
-			left: 29%;
-			top: 24%;
-		}
-
-		&__screen3 {
-			left: 25%;
-			top: 26%;
-		}
-
-		&__screen4 {
-			left: 24%;
-			top: 23%;
-		}
-
-		&__screen5 {
-			left: 25%;
-			top: 24%;
-		}
-
-		&__screen6 {
-			left: 24%;
-			top: 23%;
-		}
-
-		&__screen7 {
-			left: 24%;
-			top: 22%;
-		}
-
-		&__screen8 {
-			left: 26%;
-			top: 14%;
-		}
-
-		&__screen9 {
-			left: 26%;
-			top: 30%;
-
-			svg {
-				left: 20px;
-				bottom: auto;
-				top: -28px;
-				transform: rotate(180deg) scale(-1, 1);
+		&__sidebar-wrapper {
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 1;
+			width: 14%;
+			height: 100%;
+			background: linear-gradient(
+				90deg,
+				rgba(0, 0, 0, 0) 0%,
+				rgba(0, 41, 43, 0.5) 100%
+			);
+			z-index: 9;
+			img {
+				position: absolute;
+				right: 30px;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 66%;
 			}
+		}
+
+		&__boy {
+			max-height: 96dvh;
+		}
+
+		&__boy-container {
+			position: absolute;
+			bottom: -18%;
+			left: 0;
+			z-index: 2;
+			min-width: 560px;
+			width: 38%;
+			display: flex;
+			align-items: end;
 		}
 
 		&__woman {
-			left: auto;
-			svg {
-				left: auto;
-				right: 26px;
-				transform: scale(-1, 1);
-			}
-			&_8 {
-				right: 28%;
-				top: 28%;
+			max-height: 110dvh;
+		}
+
+		&__woman-container {
+			position: absolute;
+			bottom: -34%;
+			right: 12%;
+			z-index: 2;
+
+			min-width: 400px;
+			display: flex;
+			align-items: end;
+		}
+
+		&__woman_final {
+			max-height: 80dvh;
+		}
+
+		.invisible-button {
+			position: absolute;
+			cursor: pointer;
+			/* border: 2px solid #fff; */
+			z-index: 10;
+
+			&__screen1 {
+				left: 37%;
+				top: 36%;
+				width: 25%;
+				height: 25%;
 			}
 
-			&_9 {
-				right: 32%;
+			&__screen2 {
+				left: 77%;
+				top: 47%;
+				width: 12%;
+				height: 15%;
+			}
+
+			&__screen3 {
+				left: 64%;
+				top: 51%;
+				width: 10%;
+				height: 32%;
+			}
+
+			&__screen4 {
+				left: 33%;
+				top: 7%;
+				width: 32%;
+				height: 17%;
+			}
+		}
+		.coin-icon {
+			position: absolute;
+			z-index: 4;
+			width: 8.5%;
+
+			&__screen3 {
+				left: 56%;
+				top: 38%;
+			}
+
+			&__screen4 {
+				left: 76%;
 				top: 48%;
+			}
+
+			&__screen5 {
+				left: 67%;
+				top: 64%;
+			}
+
+			&__screen6 {
+				left: 57%;
+				top: 14%;
+			}
+		}
+		.replica {
+			&__screen1 {
+				left: 24%;
+				top: 24%;
+			}
+
+			&__screen2 {
+				left: 29%;
+				top: 24%;
+			}
+
+			&__screen3 {
+				left: 25%;
+				top: 26%;
+			}
+
+			&__screen4 {
+				left: 24%;
+				top: 23%;
+			}
+
+			&__screen5 {
+				left: 25%;
+				top: 24%;
+			}
+
+			&__screen6 {
+				left: 24%;
+				top: 23%;
+			}
+
+			&__screen7 {
+				left: 24%;
+				top: 22%;
+			}
+
+			&__screen8 {
+				left: 26%;
+				top: 14%;
+			}
+
+			&__screen9 {
+				left: 26%;
+				top: 30%;
+
 				svg {
-					left: auto;
+					left: 20px;
 					bottom: auto;
 					top: -28px;
+					transform: rotate(180deg) scale(-1, 1);
+				}
+			}
+
+			&__woman {
+				left: auto;
+				svg {
+					left: auto;
 					right: 26px;
-					transform: rotate(180deg);
+					transform: scale(-1, 1);
+				}
+				&_8 {
+					right: 28%;
+					top: 28%;
+				}
+
+				&_9 {
+					right: 32%;
+					top: 48%;
+					svg {
+						left: auto;
+						bottom: auto;
+						top: -28px;
+						right: 26px;
+						transform: rotate(180deg);
+					}
 				}
 			}
 		}
 	}
-}
-.screen__woman-container:has(.screen__woman_final) {
-	right: auto;
-	left: 1%;
-	bottom: 0;
+	.screen__woman-container:has(.screen__woman_final) {
+		right: auto;
+		left: 1%;
+		bottom: 0;
+	}
 }
 
 @media (max-width: 1420px) {
-	.screen {
-		&__woman-container {
-			right: 2%;
-		}
-		.replica {
-			&__screen8 {
-				left: 29%;
-				top: 12%;
+	.viltage {
+		.screen {
+			&__woman-container {
+				right: 2%;
 			}
+			.replica {
+				&__screen8 {
+					left: 29%;
+					top: 12%;
+				}
 
-			&__screen9 {
-				left: 29%;
-				top: 28%;
-			}
+				&__screen9 {
+					left: 29%;
+					top: 28%;
+				}
 
-			&__woman_9 {
-				top: 48%;
+				&__woman_9 {
+					top: 48%;
+				}
 			}
 		}
 	}
 }
 
 @media (max-width: 1200px) {
-	.screen {
-		background-position: 70% center;
-		&__sidebar-wrapper img {
-			right: 10%;
-		}
-		&__boy {
-			max-height: 94dvh;
-		}
-		&__screen1,
-		&__screen5,
-		&__screen7 {
-			left: 28%;
-		}
-		&__screen3,
-		&__screen4,
-		&__screen6 {
-			left: 27%;
-		}
-
-		.invisible-button {
-			&__screen1 {
-				left: 33%;
-				width: 26%;
+	.viltage {
+		.screen {
+			background-position: 70% center;
+			&__sidebar-wrapper img {
+				right: 10%;
 			}
-			&__screen2 {
-				left: 79%;
+			&__boy {
+				max-height: 94dvh;
 			}
-			&__screen4 {
+			&__screen1,
+			&__screen5,
+			&__screen7 {
 				left: 28%;
-				width: 34%;
+			}
+			&__screen3,
+			&__screen4,
+			&__screen6 {
+				left: 27%;
+			}
+
+			.invisible-button {
+				&__screen1 {
+					left: 33%;
+					width: 26%;
+				}
+				&__screen2 {
+					left: 79%;
+				}
+				&__screen4 {
+					left: 28%;
+					width: 34%;
+				}
+			}
+
+			&__woman-container {
+				right: 2%;
+			}
+
+			.replica {
+				&__screen8 {
+					left: 29%;
+					top: 12%;
+				}
+
+				&__screen9 {
+					left: 29%;
+					top: 38%;
+				}
+
+				&__woman_9 {
+					top: 58%;
+				}
 			}
 		}
-
-		&__woman-container {
-			right: 2%;
+		.screen__woman-container:has(.screen__woman_final) {
+			left: -2%;
 		}
-
-		.replica {
-			&__screen8 {
-				left: 29%;
-				top: 12%;
-			}
-
-			&__screen9 {
-				left: 29%;
-				top: 38%;
-			}
-
-			&__woman_9 {
-				top: 58%;
-			}
-		}
-	}
-	.screen__woman-container:has(.screen__woman_final) {
-		left: -2%;
 	}
 }
 
 @media (max-width: 1024px) {
-	.screen {
-		&_screen1 {
-			background-image: url(../../resources/voltage/volt_mob_bg_1.webp);
-		}
-
-		&_screen2 {
-			background-image: url(../../resources/voltage/volt_mob_bg_2-3.webp);
-		}
-
-		&_screen3 {
-			background-image: url(../../resources/voltage/volt_mob_bg_2-3.webp);
-		}
-
-		&_screen4 {
-			background-image: url(../../resources/voltage/volt_mob_bg_4.webp);
-		}
-
-		&_screen5 {
-			background-image: url(../../resources/voltage/volt_mob_bg_5.webp);
-		}
-
-		&_screen6 {
-			background-image: url(../../resources/voltage/volt_mob_bg_6.webp);
-		}
-
-		&__sidebar-wrapper {
-			display: none;
-		}
-
-		&__boy {
-			max-height: 54dvh;
-		}
-		&__boy-container {
-			left: -2%;
-			bottom: -2%;
-		}
-		&__woman {
-			max-height: 58dvh;
-		}
-
-		.replica {
-			svg {
-				left: 20px;
-				bottom: auto;
-				top: -28px;
-				transform: rotate(180deg) scale(-1, 1);
+	.viltage {
+		.screen {
+			&_screen1 {
+				background-image: url(../../resources/voltage/volt_mob_bg_1.webp);
 			}
-			&__screen1,
-			&__screen2,
-			&__screen3,
-			&__screen4,
-			&__screen5,
-			&__screen6,
-			&__screen7 {
-				left: 24%;
-				top: auto;
-				bottom: 26%;
+
+			&_screen2 {
+				background-image: url(../../resources/voltage/volt_mob_bg_2-3.webp);
 			}
-			&__screen8,
-			&__screen9 {
-				left: 24%;
-				top: auto;
-				bottom: 56%;
-				svg {
-					left: 20px;
-					bottom: -26px;
-					top: auto;
-					transform: none;
-				}
+
+			&_screen3 {
+				background-image: url(../../resources/voltage/volt_mob_bg_2-3.webp);
 			}
-			&__woman_8,
-			&__woman_9 {
-				right: 28%;
-				top: auto;
-				bottom: 18%;
-				svg {
-					left: auto;
-					bottom: auto;
-					top: -28px;
-					transform: rotate(180deg);
-				}
+
+			&_screen4 {
+				background-image: url(../../resources/voltage/volt_mob_bg_4.webp);
 			}
-		}
-		&__woman-container {
-			min-width: 260px;
-			bottom: -6%;
-			right: 0;
-			&:has(.screen__woman_final) {
+
+			&_screen5 {
+				background-image: url(../../resources/voltage/volt_mob_bg_5.webp);
+			}
+
+			&_screen6 {
+				background-image: url(../../resources/voltage/volt_mob_bg_6.webp);
+			}
+
+			&__sidebar-wrapper {
 				display: none;
 			}
-		}
 
-		.invisible-button {
-			&__screen1 {
-				top: 27%;
-				left: 0%;
-				width: 46%;
-				height: 20%;
+			&__boy {
+				max-height: 54dvh;
+			}
+			&__boy-container {
+				left: -2%;
+				bottom: -2%;
+			}
+			&__woman {
+				max-height: 58dvh;
 			}
 
-			&__screen2 {
-				top: 38%;
-				left: auto;
-				right: 1%;
-				width: 23%;
-				height: 11%;
+			.replica {
+				svg {
+					left: 20px;
+					bottom: auto;
+					top: -28px;
+					transform: rotate(180deg) scale(-1, 1);
+				}
+				&__screen1,
+				&__screen2,
+				&__screen3,
+				&__screen4,
+				&__screen5,
+				&__screen6,
+				&__screen7 {
+					left: 24%;
+					top: auto;
+					bottom: 26%;
+				}
+				&__screen8,
+				&__screen9 {
+					left: 24%;
+					top: auto;
+					bottom: 56%;
+					svg {
+						left: 20px;
+						bottom: -26px;
+						top: auto;
+						transform: none;
+					}
+				}
+				&__woman_8,
+				&__woman_9 {
+					right: 28%;
+					top: auto;
+					bottom: 18%;
+					svg {
+						left: auto;
+						bottom: auto;
+						top: -28px;
+						transform: rotate(180deg);
+					}
+				}
+			}
+			&__woman-container {
+				min-width: 260px;
+				bottom: -6%;
+				right: 0;
+				&:has(.screen__woman_final) {
+					display: none;
+				}
 			}
 
-			&__screen3 {
-				top: 40%;
-				left: 52%;
-				width: 16%;
-				height: 29%;
-			}
+			.invisible-button {
+				&__screen1 {
+					top: 27%;
+					left: 0%;
+					width: 46%;
+					height: 20%;
+				}
 
-			&__screen4 {
-				top: 4%;
-				left: 0%;
-				width: 56%;
-				height: 15%;
-			}
-		}
-		.coin-icon {
-			width: 14%;
+				&__screen2 {
+					top: 38%;
+					left: auto;
+					right: 1%;
+					width: 23%;
+					height: 11%;
+				}
 
-			&__screen3 {
-				left: 36%;
-				top: 28%;
-			}
+				&__screen3 {
+					top: 40%;
+					left: 52%;
+					width: 16%;
+					height: 29%;
+				}
 
-			&__screen4 {
-				left: 76%;
-				top: 40%;
+				&__screen4 {
+					top: 4%;
+					left: 0%;
+					width: 56%;
+					height: 15%;
+				}
 			}
+			.coin-icon {
+				width: 14%;
 
-			&__screen5 {
-				left: 56%;
-				top: 54%;
-			}
+				&__screen3 {
+					left: 36%;
+					top: 28%;
+				}
 
-			&__screen6 {
-				left: 36%;
-				top: 10%;
+				&__screen4 {
+					left: 76%;
+					top: 40%;
+				}
+
+				&__screen5 {
+					left: 56%;
+					top: 54%;
+				}
+
+				&__screen6 {
+					left: 36%;
+					top: 10%;
+				}
 			}
 		}
 	}
 }
 
 @media (max-width: 768px) {
-	.screen {
-		.replica {
-			&__screen1,
-			&__screen2,
-			&__screen3,
-			&__screen4,
-			&__screen5,
-			&__screen6,
-			&__screen7 {
-				left: 50%;
-				transform: translate(-50%);
-				top: auto;
-				bottom: 22%;
-				min-width: 62%;
-			}
-			&__screen8,
-			&__screen9 {
-				left: 50%;
-				transform: translate(-50%);
-				top: auto;
-				bottom: 56%;
-				min-width: 62%;
-
-				svg {
-					left: 20px;
-					bottom: -26px;
+	.viltage {
+		.screen {
+			.replica {
+				&__screen1,
+				&__screen2,
+				&__screen3,
+				&__screen4,
+				&__screen5,
+				&__screen6,
+				&__screen7 {
+					left: 50%;
+					transform: translate(-50%);
 					top: auto;
-					transform: none;
+					bottom: 22%;
+					min-width: 62%;
+				}
+				&__screen8,
+				&__screen9 {
+					left: 50%;
+					transform: translate(-50%);
+					top: auto;
+					bottom: 56%;
+					min-width: 62%;
+
+					svg {
+						left: 20px;
+						bottom: -26px;
+						top: auto;
+						transform: none;
+					}
+				}
+				&__woman_8,
+				&__woman_9 {
+					right: 56%;
+					transform: translateX(50%);
+					top: auto;
+					bottom: 18%;
+					min-width: 84%;
+
+					svg {
+						left: auto;
+						bottom: auto;
+						top: -28px;
+						transform: rotate(180deg);
+					}
 				}
 			}
-			&__woman_8,
-			&__woman_9 {
-				right: 56%;
-				transform: translateX(50%);
-				top: auto;
-				bottom: 18%;
-				min-width: 84%;
-
-				svg {
-					left: auto;
-					bottom: auto;
-					top: -28px;
-					transform: rotate(180deg);
-				}
+			&__boy-container {
+				left: -6%;
 			}
-		}
-		&__boy-container {
-			left: -6%;
-		}
-		&__woman-container {
-			min-width: 160px;
-			right: -8%;
-		}
+			&__woman-container {
+				min-width: 160px;
+				right: -8%;
+			}
 
-		.invisible-button {
-			&__screen4 {
-				top: 2%;
-				height: 24%;
+			.invisible-button {
+				&__screen4 {
+					top: 2%;
+					height: 24%;
+				}
 			}
 		}
 	}
 }
 
 @media (max-width: 481px) {
-	.screen {
-		.invisible-button {
-			&__screen1 {
-				top: 32%;
-				height: 16%;
+	.viltage {
+		.screen {
+			.invisible-button {
+				&__screen1 {
+					top: 32%;
+					height: 16%;
+				}
+				&__screen4 {
+					top: 16%;
+					height: 16%;
+				}
 			}
-			&__screen4 {
-				top: 16%;
-				height: 16%;
-			}
-		}
-		.coin-icon {
-			&__screen3 {
-				left: 36%;
-				top: 38%;
-			}
-			&__screen6 {
-				top: 20%;
+			.coin-icon {
+				&__screen3 {
+					left: 36%;
+					top: 38%;
+				}
+				&__screen6 {
+					top: 20%;
+				}
 			}
 		}
 	}

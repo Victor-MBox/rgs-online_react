@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import HomePage from '../pages/homePage/HomePage'
 import PreviewVoltagePage from '../pages/previewPage/previewVoltagePage/PreviewVoltagePage'
 import PreviewDisasterPage from '../pages/previewPage/previewDisasterPage/PreviewDisasterPage'
+import DisasterPage from '../pages/disasterPage/DisasterPage'
 import VoltagePage from '../pages/voltagePage/VoltagePage'
 import FinishPage from '../pages/finishPage/FinishPage'
 // style
@@ -27,6 +28,7 @@ function App() {
 					<Route path='/' element={<HomePage />} />
 					<Route path='/preview-disaster' element={<PreviewDisasterPage />} />
 					<Route path='/preview-voltage' element={<PreviewVoltagePage />} />
+					<Route path='/disaster' element={<DisasterPage />} />
 					<Route path='/voltage' element={<VoltagePage />} />
 					<Route path='/finish' element={<FinishPage />} />
 				</Routes>

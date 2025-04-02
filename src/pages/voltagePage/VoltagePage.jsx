@@ -81,7 +81,7 @@ function VoltagePage() {
 	} = voltageScreens[currentScreen]
 
 	return (
-		<div className='screen-container'>
+		<div className='screen-container viltage'>
 			<AnimatePresence exitBeforeEnter>
 				<motion.div
 					key={voltageScreens[currentScreen].id}
